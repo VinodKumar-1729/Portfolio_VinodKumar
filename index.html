@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head Section, contains meta tags, title and external links for css, font awesome and favicon.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vinod Kumar's personal portfolio showcasing full stack development skills, Web development, blockchain projects, and creative web solutions.">
+    <meta name="keywords"
+        content="Vinod Kumar, portfolio, front-end developer, Backend developer, Full Stack Developer, HTML, CSS, JavaScript, ReactJS, Java, NodeJS, ExpressJS, MongoDB, SQL">
+    <meta name="author" content="Vinod Kumar">
+    <title> Vinod Kumar | Full Stack Developer </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <header id="header">
+        <!--This is header of the website, contains logo, static dark or light theme toggle button and navbar.-->
+        <img src="./images/vk_logo.png" alt="logo" id="logo"> <!--Logo for the website-->
+        <div class="theme-wrapper"> <!-- Static dark or light theme toggle button-->
+            <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+            <label for="theme-toggle" class="toggle-label">
+                <span class="toggle-icon"></span>
+            </label>
+        </div>
+        <nav> <!-- Navbar -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle">
+                ☰
+            </label>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience-section">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main-container">
+        <!-- 
+                this main conatainer contains all the sections like, home, about me, experience etc...
+        -->
+        <section class="home-section" id="home">
+            <div class="home-left">
+                <h1>Vinod Kumar</h1> <!-- Heading with effect -->
+                <h3>A technology enthusiast with a knack for solving complex problems through full-stack development.
+                </h3>
+                <div class="resume-download"> <!-- Resume download button with hover effect -->
+                    <a href="https://drive.google.com/uc?export=download&id=1m7XoHgJGi1dKyQHsbOB2y77gsKMlUGeP">Download
+                        Resume</a>
+                </div>
+            </div>
+            <div class="home-right">
+                <div class="glow-background"></div> <!-- Glowing background effect -->
+                <img src="./images/mypic_HomePage.png" alt="Vinod Kumar"> <!-- Image for home page-->
+                <div class="social-media-icons"> <!-- Social media links -->
+                    <a href="https://www.instagram.com/vinodkumar_1729/" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vinod-kumar1729/" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/Vinodku27955914" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100067295853833&mibextid=ZbWKwL" target="_blank"
+                        class="social-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.snapchat.com/add/vinodkumar18645?share_id=uME8oTbq8lo&locale=en-US"
+                        target="_blank" class="social-icon">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="about"> <!--This section contains code for about me -->
+            <h1>About Me</h1> <!-- Heading-->
+            <h2>From Frontend Dreams to Backend Realities</h2>
+            <div class="about-container">
+                <div class="about-left"> <!-- Image for about me page-->
+                    <img src="./images/mypic_about.jpg" alt="my-image" class="about-image">
+                </div>
+                <div class="about-right"> <!-- Contains content for about me with read more button-->
+                    <p class="short-content">
+                        I am Vinod Kumar, a passionate full-stack development enthusiast with a deep interest in
+                        crafting digital
+                        solutions that make a difference.
+                    </p>
+                    <p>My journey in technology began with a fascination for how things work behind the scenes.
+                        Over the years, I've
+                        honed my skills in both front-end and backend development, tackling complex challenges
+                        with innovative
+                        solutions.</p>
+                    <input type="checkbox" id="read-more-toggle" class="read-more-toggle">
+                    <div class="full-content">
+                        <p>Throughout my journey, I've had the opportunity to work on diverse projects that showcase
+                            my ability to adapt
+                            and excel in various domains. From full-stack development to blockchain and machine
+                            learning, each project has
+                            been a step towards mastering the art of coding and development.</p>
+                        <p>I'm committed to continuous learning and staying at the forefront of technological
+                            advancements. My goal is
+                            to contribute to projects that not only demonstrate technical excellence but also make a
+                            meaningful impact.
+                            Outside of coding, I enjoy reading about the latest tech trends, participating in
+                            hackathons, and collaborating
+                            with like-minded individuals.</p>
+                    </div>
+                    <label for="read-more-toggle" class="read-more-button"></label>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-section"> <!-- section to show my work experience-->
+            <h1>My Experience</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="experience-card">
+                        <h2>Front End Developer Intern</h2>
+                        <h3>Bharat Tech</h3>
+                        <h4>Work from Home</h4>
+                        <p>During my internship at Bharat Tech, I had the opportunity to work as a Front End
+                            Developer, where I
+                            played a crucial role in enhancing the responsiveness of the company's website. I
+                            successfully
+                            contributed to over 30% of the website's responsive design, ensuring a seamless user
+                            experience
+                            across various devices. I developed the front-end part of a job portal, which included
+                            designing
+                            intuitive user interfaces and implementing efficient functionalities.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="experience-card">
+                        <h2>Prompt Engineer (AI Trainer)</h2>
+                        <h3>Outlier.ai</h3>
+                        <h4>Freelance</h4>
+                        <p>I spent over six months as a Prompt Engineer at Outlier.ai, where I was responsible for
+                            creating and
+                            refining various prompts to train an AI model under specific conditions. Due to my
+                            strong performance,
+                            I was promoted to Team Lead. I led a team of contributors for two months, guiding them
+                            through the
+                            intricacies of prompt creation, solving their issues, and serving as a crucial link
+                            between the contributors
+                            and the higher management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h1>My Skills</h1>
+            <div class="skills-elements">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;">
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;">
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;">
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Tailwind CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;">
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>ReactJS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;">
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Material UI</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%;">
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>NodeJS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;">
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>ExpressJS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;">
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>MongoDB</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;">
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Data Structures and Algorithms</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;">
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Java</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%;">
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>C++</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;">
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>SQL</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;">
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Certification section -->
+        <section id="certifications">
+            <h1>My Certificates</h1>
+            <div class="certificates-flex">
+                <div class="certificate">
+                    <h2>Programming in HTML5 with JavaScript and CSS3</h2>
+                    <img src="./images/frontend.jpeg" alt="">
+                    <p>This certificate demonstrates my expertise in front-end development, focusing on HTML5, CSS3,
+                        and
+                        JavaScript. Through this course, I learned to create dynamic, responsive websites and web
+                        applications, mastering key concepts such as DOM manipulation, event handling, and advanced
+                        CSS
+                        techniques. This certification validates my ability to build interactive and visually
+                        appealing
+                        web pages.
+                    </p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/MSJNM25ZY3VS" target="_blank">Link
+                        for certificate</a>
+                </div>
+                <div class="certificate">
+                    <h2>Learn C++ Programming Beginner to Advance- Deep Dive in C++</h2>
+                    <img src="./images/c++.jpg" alt="">
+                    <p>This comprehensive certification covers C++ programming from beginner to advanced levels. It
+                        provided me with a deep understanding of object-oriented programming, data structures,
+                        algorithms, and memory management. The course also emphasized best practices in C++
+                        development,
+                        including effective problem-solving skills and optimizing code performance for complex
+                        applications.
+                    </p>
+                    <a href="https://www.udemy.com/certificate/UC-9bbf2a82-e2be-4ccd-aa0c-5f4ddc76bbf5/"
+                        target="_blank">Link for certificate</a>
+                </div>
+                <div class="certificate centered">
+                    <h2>Microsoft Certified: Azure AI Fundamentals</h2>
+                    <img src="./images/azure_ai.png" alt="">
+                    <p>This certification confirms my foundational knowledge of AI concepts and Microsoft Azure
+                        services. I gained insights into machine learning, computer vision, natural language
+                        processing,
+                        and responsible AI practices. The course taught me how to implement and utilize AI workloads
+                        on
+                        Azure, preparing me to apply AI solutions in real-world scenarios effectively.
+                    </p>
+                    <a href="https://www.credly.com/badges/8835c853-46fa-4bb1-bc04-709621013bdc/" target="_blank">Link
+                        for certificate</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project">
+                    <div class="project-image" style="background-image: url('./images/mess_image.jpg');">
+                        <div class="content">
+                            <h2> Apna Mess</h2>
+                            <div class="objective">
+                                <h3>Objective</h3>
+                                <p> To streamline communication and feedback between students and mess managers,
+                                    fostering a more efficient and transparent mess management system. </p>
+                            </div>
+                            <div class="tech-stack">
+                                <h3>Tech Stack</h3>
+                                <p>HTML, CSS, JavaScript, EJS , Node.js, ExpressJS, MongoDB </p>
+                            </div>
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>
+                                    "Apna Mess" is a web-based platform designed to simplify the complaint and
+                                    feedback process for students residing in hostel messes. The platform utilizes a
+                                    modern tech stack, including HTML, CSS, JavaScript, EJS, Node.js, Express.js,
+                                    and MongoDB, to deliver a user-friendly and efficient experience.
+
+                                <h4>Key features of Apna Mess include: </h4>
+
+                                <ul>
+                                    <li>
+                                        User Registration and Login: Students can create accounts and log in to
+                                        access
+                                        the platform's features.
+                                    </li>
+                                    <li>
+                                        Separate Interfaces: The platform offers distinct interfaces for students
+                                        and
+                                        mess managers, tailored to their specific needs.
+                                    </li>
+                                    <li>
+                                        Live Menu Display: Students can view the daily menu in real-time, ensuring
+                                        transparency and convenience.
+                                    </li>
+                                    <li>
+                                        Complaint and Feedback System: Students can easily submit complaints or
+                                        feedback
+                                        directly to the mess manager, facilitating open communication.
+                                    </li>
+                                    <li>
+                                        Mess Manager Dashboard: Mess managers can access a centralized dashboard to
+                                        manage complaints, send updates, and view student feedback.
+                                    </li>
+                                    <li>
+                                        Notification System: The platform enables mess managers to send important
+                                        notifications or updates to students, ensuring timely communication.
+                                    </li>
+                                </ul>
+                                By providing these features, Apna Mess aims to enhance the overall mess
+                                experience for students and foster a more collaborative relationship between
+                                students and mess managers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2-->
+                <div class="project">
+                    <div class="project-image" style="background-image: url('./images/blockchain.jpg');">
+                        <div class="content">
+                            <h2> Blockchain Powered Certification System</h2>
+                            <div class="objective">
+                                <h3>Objective</h3>
+                                <p>To establish a secure, tamper-proof, and transparent certification system
+                                    utilizing blockchain technology.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <h3>Tech Stack</h3>
+                                <p>HTML, CSS, JavaScript, ReactJS, web3.js, solidity, truffle, Metamask </p>
+                            </div>
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>
+                                    "Blockchain Powered Certification System" is a decentralized platform designed
+                                    to revolutionize the storage and verification of digital certificates. By
+                                    leveraging blockchain technology and IPFS (InterPlanetary File System), the
+                                    system ensures the integrity, security, and transparency of certification data.
+
+                                <h4>Key features and functionalities include: </h4>
+
+                                <ul>
+                                    <li>
+                                        Decentralized Storage: Certificates are stored on the IPFS network, ensuring
+                                        data resilience and reducing the risk of data loss or corruption.
+                                    </li>
+                                    <li>
+                                        Blockchain-Based Verification: Critical certificate details, including
+                                        student
+                                        ID, issuer ID, and document hash values, are securely stored on a
+                                        blockchain.
+                                        This provides an immutable and transparent record of the certification
+                                        process.
+                                    </li>
+                                    <li>
+                                        Role-Based Access: The system incorporates three distinct roles:
+                                        Issuer: Responsible for creating and issuing certificates, entering relevant
+                                        details, and storing the certificate document on IPFS.
+                                    </li>
+                                    <li>
+                                        Student: Receives the issued certificate and can share it with verifiers for
+                                        verification.
+                                    </li>
+                                    <li>
+                                        Verifier: Can verify the authenticity of a certificate by inputting the
+                                        certificate ID. The verifier can then access the corresponding certificate
+                                        details stored on the blockchain.
+                                    </li>
+                                    <li>
+                                        Enhanced Security: Blockchain technology ensures the immutability and
+                                        tamper-proof nature of the certification data, providing a high level of
+                                        security and trust.
+                                    </li>
+                                </ul>
+                                By utilizing blockchain and IPFS, this system offers a more reliable and
+                                efficient method for storing, managing, and verifying digital certificates,
+                                eliminating the need for intermediaries and reducing the risk of fraud or
+                                forgery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Project 3 -->
+                <div class="project">
+                    <div class="project-image" style="background-image: url('./images/cattle.jpg');">
+                        <div class="content">
+                            <h2> Cattle Detection and Tracking using YOLOv9 and Deep Sort </h2>
+                            <div class="objective">
+                                <h3>Objective</h3>
+                                <p> To develop a robust and accurate computer vision system capable of real-time
+                                    detection and tracking of cattle within video footage.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <h3>Tech Stack</h3>
+                                <p> Python, computer vision, numpy, pandas </p>
+                            </div>
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>
+                                    "Cattle Detection and Tracking using YOLOv9 and Deep Sort" is a computer vision
+                                    project aimed at automating the monitoring and management of cattle herds. By
+                                    leveraging the power of deep learning, the system provides a reliable and
+                                    efficient solution for identifying and tracking individual cattle within video
+                                    sequences.
+
+                                <h4>Key features and functionalities include: </h4>
+
+                                <ul>
+                                    <li>
+                                        Object Detection: The system utilizes the YOLOv9 algorithm to accurately
+                                        detect cattle within video frames, even in challenging conditions such as
+                                        low light or occlusion.
+                                    </li>
+                                    <li>
+                                        Object Tracking: The Deep Sort algorithm is employed to establish and
+                                        maintain unique identities for each detected cattle, enabling continuous
+                                        tracking across multiple frames.
+                                    </li>
+                                    <li>
+                                        Real-Time Performance: The system is designed to operate in real-time,
+                                        providing immediate feedback and facilitating timely interventions.
+                                    </li>
+                                    <li>
+                                        Accuracy and Efficiency: The combination of YOLOv9 and Deep Sort ensures
+                                        high accuracy and efficiency in cattle detection and tracking, even in
+                                        complex environments.
+                                    </li>
+                                    <li>
+                                        Scalability: The system can be easily adapted to handle various video
+                                        resolutions and cattle herd sizes, making it suitable for a wide range of
+                                        applications.
+                                    </li>
+                                </ul>
+                                By automating the process of cattle detection and tracking, this project offers
+                                significant benefits to farmers and ranchers, including improved herd management,
+                                enhanced security, and increased productivity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project">
+                    <div class="project-image" style="background-image: url('./images/text_image.jpg');">
+                        <div class="content">
+                            <h2> Text Utils</h2>
+                            <div class="objective">
+                                <h3>Objective</h3>
+                                <p> To create a comprehensive and efficient text manipulation tool that simplifies
+                                    various text-related tasks. </p>
+                            </div>
+                            <div class="tech-stack">
+                                <h3>Tech Stack</h3>
+                                <p>HTML, CSS, JavaScript, ReactJS. </p>
+                            </div>
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>
+                                    "Text Utils" is a user-friendly web application designed to streamline text
+                                    manipulation processes. Built with HTML, CSS, JavaScript, and ReactJS, the tool
+                                    offers a range of functionalities to enhance text editing and analysis.
+                                <h4>Key features of Text Utils include: </h4>
+
+                                <ul>
+                                    <li>
+                                        Text Input and Output: Users can enter text into the application and view
+                                        the processed results.
+                                    </li>
+                                    <li>
+                                        Word Count: The tool accurately calculates the number of words in the
+                                        entered text.
+                                    </li>
+                                    <li>
+                                        Character Count: Users can determine the total number of characters
+                                        (including spaces) in the text.
+                                    </li>
+                                    <li>
+                                        Text Conversion: The application provides options to convert text to
+                                        uppercase, lowercase, or title case, as needed.
+                                    </li>
+                                </ul>
+                                By providing these essential text manipulation tools, "Text Utils" aims to save
+                                users time and effort while improving the overall efficiency of their text-based
+                                tasks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project">
+                    <div class="project-image" style="background-image: url('./images/blogsite.jpg');">
+                        <div class="content">
+                            <h2> Personal Blog: Vinod Kumar </h2>
+                            <div class="objective">
+                                <h3>Objective</h3>
+                                <p> To establish an online platform to share personal experiences, insights, and
+                                    knowledge related to coding, cricket, and travel. </p>
+                            </div>
+                            <div class="tech-stack">
+                                <h3>Tech Stack</h3>
+                                <p>HTML, CSS. </p>
+                            </div>
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>
+                                    "Personal Blog: Vinod Kumar" is a digital space where I document my experiences
+                                    and reflections on coding, cricket, and travel. Through my blog posts, I aim to
+                                    connect with readers, share valuable insights, and foster a sense of community.
+
+                                <h4>Key features and content include: </h4>
+                                <ul>
+                                    <li>
+                                        Blog Posts: Regularly updated articles on coding, cricket, and travel,
+                                        offering personal perspectives and experiences.
+                                    </li>
+                                    <li>
+                                        Navbar Navigation: A user-friendly navigation menu to facilitate easy access
+                                        to different sections of the blog.
+                                    </li>
+                                    <li>
+                                        Contact Form: A convenient way for readers to get in touch and provide
+                                        feedback or inquiries.
+                                    </li>
+                                    <li>
+                                        Social Media Integration: Links to my social media profiles, allowing for
+                                        further interaction and engagement.
+                                    </li>
+                                    <li>
+                                        About Me Section: A brief introduction highlighting my background,
+                                        interests, and motivations for creating this blog.
+                                    </li>
+                                </ul>
+                                By providing a platform for sharing my passions and experiences, I hope to inspire
+                                others, spark discussions, and build meaningful connections within the online
+                                community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project">
+                    <div class="project-image" style="background-image: url('./images/Designer.png');">
+                        <div class="content">
+                            <h2> SYVO : Save Youtube Video Offline </h2>
+                            <div class="objective">
+                                <h3>Objective</h3>
+                                <p> To create a user-friendly and efficient tool that allows users to download
+                                    YouTube videos for offline viewing. </p>
+                            </div>
+                            <div class="tech-stack">
+                                <h3>Tech Stack</h3>
+                                <p> Python, Tkinter</p>
+                            </div>
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p>
+                                    "YouTube Video Downloader" is a web application designed to simplify the process
+                                    of saving YouTube videos for offline consumption. The tool provides a convenient
+                                    interface for users to enter the URL of a desired YouTube video and initiate the
+                                    download process.
+
+                                <h4> Key features and functionalities include: </h4>
+
+                                <ul>
+                                    <li>
+                                        Simple and Intuitive Interface: A user-friendly design that is easy to
+                                        navigate and use, even for those without technical expertise.
+                                    </li>
+                                    <li>
+                                        Efficient Downloading: The tool utilizes optimized download methods to
+                                        ensure fast and reliable video downloads.
+                                    </li>
+                                    <li>
+                                        Various Video Formats: Users can select their preferred video format and
+                                        quality (e.g., MP4, MP3, HD, 4K) to suit their needs.
+                                    </li>
+                                    <li>
+                                        Batch Downloading: The ability to download multiple videos simultaneously,
+                                        saving time and effort.
+                                    </li>
+                                    <li>
+                                        Progress Tracking: Real-time progress indicators keep users informed about
+                                        the status of their downloads.
+                                    </li>
+                                </ul>
+                                By offering a convenient and efficient solution for downloading YouTube videos,
+                                "YouTube Video Downloader" empowers users to enjoy their favorite content offline,
+                                regardless of internet connectivity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for contact me -->
+        <section id="contact">
+            <h1> Contact Me</h1>
+            <div class="form">
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Vinod Kumar. All rights reserved.</p>
+            <div class="footer-buttons">
+                <a href="mailto:vinodkumar@example.com">Email</a>
+                <a href="tel:+919900654994">Call</a>
+            </div>
+        </div>
+    </footer>
+
+
+</html>
