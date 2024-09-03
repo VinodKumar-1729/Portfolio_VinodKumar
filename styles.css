@@ -1264,6 +1264,9 @@ footer {
   input[type="submit"] {
     font-size: 1rem;
   }
+  #footer {
+    width: 94%;
+  }
   .footer-content p {
     font-size: 0.9rem;
   }
@@ -1290,12 +1293,36 @@ footer {
     overflow-x: hidden;
     margin-left: 15px;
   }
+  .main-container {
+    width: 90%;
+  }
   #header {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
   }
+  #about,
+  #experience-section,
+  #certifications {
+    width: 97%;
+  }
+  #skills {
+    width: 90%;
+  }
+  #projects {
+    width: 95%;
+    margin-left: 9px;
+  }
+  #contact {
+    width: 100%;
+    margin-left: -8px;
+  }
+  #footer {
+    width: 100%;
+  }
+
   .experience-card {
     width: 80vw;
     padding: 10px;
