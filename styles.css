@@ -1057,8 +1057,9 @@ footer {
 
   .menu-toggle-checkbox:checked + .menu-toggle + ul {
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: flex-start;
+    top: 200px;
     padding: 0;
   }
 
@@ -1264,8 +1265,8 @@ footer {
   input[type="submit"] {
     font-size: 1rem;
   }
-  #footer {
-    width: 94%;
+  footer {
+    width: 95%;
   }
   .footer-content p {
     font-size: 0.9rem;
@@ -1282,7 +1283,7 @@ footer {
 }
 
 /* Responsiveness for mobile devices */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   body {
     display: flex;
     flex-direction: column;
@@ -1319,7 +1320,7 @@ footer {
     width: 100%;
     margin-left: -8px;
   }
-  #footer {
+  footer {
     width: 100%;
   }
 
